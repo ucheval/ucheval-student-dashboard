@@ -1,0 +1,480 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fraunces:ital,opsz@1,9..144&family=M+PLUS+1p:wght@100&family=Roboto:wght@300&family=Rubik:wght@300&display=swap');
+
+
+ *{
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Markazi Text';
+    font-weight: 450;
+    
+    
+} 
+
+
+
+
+/* here is my logo */
+.logo img{
+    width: 70px; 
+    margin-top: 20px;
+    margin-left: 75px;
+    border-radius: 50%;
+
+}
+
+
+/* ths is to hide the logo image from showing outside the menu bar  */
+.logo{
+  overflow: hidden;
+}
+
+
+/* here is menu */
+.menu-bar{
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0c012f;
+  height: 110vh;
+  width: 80px;
+  padding: 0 20px;
+  transition: all 0.5s;
+  overflow: hidden;
+  
+}
+
+/* this is to make it move when you hover over menu-bar */
+.menu-bar:hover{
+  width: 20%;
+  transition: 0.8s;
+}
+
+
+
+ul li{
+  padding: 18px;
+  margin: 8px 0px;
+}
+
+ 
+
+ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+
+
+/* here is to create space between the icons and the tex in menu bar */
+ul a{
+  display: flex;
+  gap: 10px;
+  
+}
+
+ul i{
+  font-size: 20px;
+
+}
+
+.sign-out{
+  background-color: #a70505;
+  border-radius: 10px;
+  margin-top: 50px;            
+  /* i gave a width here bc i gave a width to the ul */
+ 
+}
+
+/* this is to make the sign out go to the bottom of the page */
+
+
+ul{
+  height: 80vh;
+  position: relative;
+  width: 70%;
+  
+}
+
+ul li:hover{
+  background-color: #a70505;
+  border-radius: 12px;
+}  
+
+/* ths is to hide the logo image from showing outside the menu bar  */
+
+ ul a span{
+  overflow: hidden; 
+}
+
+/* this is to make the items flex, bc we have only two
+ dives th container and the rest body so we convert 
+ the body to flex bc ctreating another container will
+  couse responsive iasues  */
+
+
+
+  /* body side */
+
+
+
+  body{
+    display: flex;
+        
+  }
+
+  .content-main{
+    background-image: url(/image/5594016-e1656071131636.webp);
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* header css starts here, header includes search bar and welcome note */
+
+
+.profile-img img{
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: #0c012f8e 3px 2px 2px 2px ;
+}
+
+.header-main{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 20px;
+  align-items: center;
+  width: 90%;
+  /* margin: auto; */
+  /* we ned to call seperate margins to get a space at the top bc margin auto cant give an auto marging top bc there is no space delcared down*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px 5px rgba(24, 33, 74, 0.767);
+  
+
+}
+
+
+/* header tittle  */
+.header-tittle h1{
+  color: #0c012fd5;
+  font-size: 20px;
+  text-decoration:underline;
+  text-shadow:  2px 0px 2.5px rgb(82, 76, 76);
+  letter-spacing: 2px;
+ 
+}
+    
+
+.header-tittle span{
+  color: #0c012f;
+  font-size: 15px;
+  letter-spacing: 4px;
+ 
+  /* to be able to apply inline elements to spam which is not  a block element, like margin bottom or other spacing between span and  h1
+  you need to trun the spam to block element first then strat aplying 
+  iside that it will not work */
+  display: block;
+  padding-bottom: 10px;
+  text-shadow:  1px 0px 1.5px gray;
+  font-weight: bold; 
+  
+  
+}
+
+
+
+.profile-info{
+  display: flex;
+  align-items: center;
+  /* this will make the both items be in center of each other in a line */
+  gap: 100px;
+  /* justify-content: space-between; can not work here bc .. so we use gap */
+
+} 
+
+.search-box input{
+  padding: 8px;
+  background: transparent;
+  border: 1px solid gray;
+  outline: none;
+  /* outline can only be removed when you color the border and the property solid etc then the color is declired aside this it cant work */
+  border-radius: 10px;
+  
+}
+
+.search-box button{
+  padding: 7px;
+  position: absolute;
+  right: 0.2px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-color: rgb(223, 220, 220);
+  background-color: #a70505;
+  color: white;
+  
+  /* outline: none; */
+
+  /*the short form of this positioning to keep the search icon to 
+  related area, go bacjk and put search box position to relative */
+}
+
+.search-box{
+  position: relative;
+}
+
+.search-box button :hover{
+  transform: scale(1.1);
+}
+
+
+/* my card starts here */ 
+
+.card-container{
+background-color: #ffffff7f;
+width: 90%;
+/* width: 93%; */
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+padding:5px 20px;
+/* background: transparent; */
+box-shadow: 5px 10px 10px 5px rgba(24, 33, 74, 0.886);
+border-radius: 10px;
+height: 200px;
+
+
+}
+
+.card-container h1{
+  color: #0c012f;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-shadow:  2px 0px 1.5px gray;
+
+}
+
+.card-flex{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 3rem;
+}
+
+.card-student{
+  /* background-color: rgb(166, 180, 180); */
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+
+  /* from here needs my page to be full so it can align acording to the code */
+  justify-content: space-around;
+  flex-direction: column;
+  width: 22.5%;
+  height: 120px;
+  box-shadow: 1px 8px 15px 1px rgb(24, 33, 74);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+}
+
+.card-flex :hover{
+  transform: translate(-5px);
+}
+
+/* here is the icon on card css */
+.card-header{
+  display: flex;
+  justify-content: space-around;
+} 
+
+.passcode-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon{
+  font-size: 20px;
+  /* background-color: #0c012f; */
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.number1{
+  background-color: #0c012f;
+}
+
+.number2{
+  background-color: #342f43e4;
+}
+
+.number3{
+  background-color: #6f6a7d;
+}
+
+.number4{
+  background-color: #4d4c4e;
+}
+
+
+
+
+.card-flex > .card-student:nth-child(1){
+  background-color: rgb(137, 149, 149);
+  color: #f9e8e8;
+}
+
+.card-flex > .card-student:nth-child(2){
+  background-color: rgba(91, 86, 56, 0.895);
+  color: #fff;
+}
+
+.card-flex > .card-student:nth-child(3){
+  background: rgba(144, 93, 52, 0.9);
+  color: white;
+}
+
+.card-flex > .card-student:nth-child(4){
+ background: rgba(176, 148, 58, 0.986);
+  color: white;
+}
+
+/* assignment container */
+
+
+
+.assignment-container{
+  background-color: #ffffff7f;
+width: 90%;
+/* width: 93%; */
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+padding:5px 20px;
+border-radius: 10px;
+box-shadow: #0c012f8e 2px 4px 5px 3px ;
+height: 120px;
+
+}
+
+.assignment-container h1{
+  font-size: 18px;
+  padding-bottom: 1rem;
+  text-shadow:  2px 0px 1.5px gray;
+  
+}
+
+.top-img img{
+  width: 40px;
+  border-radius: 50%;
+
+  /* my added css*/
+  position: absolute;
+  left: 54px;
+  top: 5px;
+  
+}
+
+.assignment-flex{
+  display: flex;
+  gap: 0.5rem;
+  
+}
+
+
+.assignment-subject{
+ 
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 5px 3px 0px 0px #0c012f;
+  height: 70px;
+  align-items: center;
+  border-radius: 10px;
+  border-left: 1px solid #0c012f;
+
+
+}
+
+/* flex 2 works like a flex grow it increases the leghnt */
+.top-perfomer{
+  
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 3px 0px 0 #0c012f;
+  align-items: center;
+  border-radius: 10px;
+  border-right: 3px solid #0c012f;
+
+  /* my added css */
+  position: relative;
+  border-left: 1px solid #0c012f;
+
+
+}
+
+
+.courses h3{
+  font-size: 15px;
+  padding-bottom: 7px;
+  color: #0c012f;
+  font-weight: bold;
+  
+  
+}
+
+
+
+.topic{
+  font-size:15px;
+  font-style: italic;
+}
+
+.btn-btn{
+  background-color: #0f0d43ea;
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.number{
+  font-size: 21px;
+  padding: 5px;
+  margin-left: 5px;
+  
+}
+
+.name{
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  left: 110px;
+ 
+}
+
+.ass-num{
+  font-size: 17px;
+  font-style: italic;
+  color: #0c012f;
+}
+
+.score{
+  background-color: #0f0d43e2;
+  position: absolute;
+  right: 40px;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  
+}
